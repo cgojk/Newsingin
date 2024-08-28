@@ -32,7 +32,7 @@ console.log(emailInput);
 
 button.addEventListener('click',()=>{
     if(validateEmail(email.value)){
-      
+      text.innerText=" ";
       emailInput.innerHTML=email.value;
       console.log(emailInput);
         openModal();
