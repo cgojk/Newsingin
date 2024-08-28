@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.14.0/cdn/themes/light.css" />
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+<main class="container">
+   
+           <section class="article ">
+                <h1 class="title-article"> Stay updated!</h1>
+              
+                <p class="paragraph-article">
+                  Join 60,000+ product managers receiving monthly updates on:
+
+                </p>
+                <div class="list">
+                  <ul class="list__items">
+                    <li  class="list__services"><img src="images/icon-list.svg" alt="icon list" class="icon__list"> Product discovery and building what matters</li>
+                    <li  class="list__services"><img src="images/icon-list.svg" alt="icon list" class="icon__list">Measuring to ensure updates are a success </li>
+                    <li  class="list__services"><img src="images/icon-list.svg" alt="icon list" class="icon__list"> And much more!
+                    </li>
+                  </ul>
+                </div>
+                  <form class="login-form">
+                     <div class="label_message">
+                      <label for="email" class="email">Email address</label> 
+                      <p id="message"></p>
+                    </div>
+                        <input type="text" name="email" placeholder="mailbarbie@nasa.com" required>
+                        
+                     
+                         <a href="#"class="btn btn-submit">Subscribe to monthly newsletter
+                          <i class="fa-solid fa-arrow-right"></i>
+                         </a>
+                        
+                          <img class="error hidden"src="images/icon-error.svg" alt="error icon">
+                    </form>
+            </section>
+
+            <section class="hero__image">
+              <div class="hero__container ">
+                 <img class="image-portable"src="images/illustration-sign-up-mobile.svg" alt="different images, a graphic a number an screen "> 
+                 <img class="image-desktop"src="images/illustration-sign-up-desktop.svg" alt="different images together a graphic a number an screen">
+              </div>
+            </section>
+   
+</main>
+
+<section class="container_sm modal__receive_mail hidden ">
+  <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+  
+    <img class="icon__success"src="images/icon-success.svg" alt="">
+    <h1 class="title__success">Thanks for subscribing</h1>
+    <p class="paragraph__success">A confirmation email has been sent to <strong><span id="email-received" class="email-received" ></strong></span>.Please open it and click the button inside to confirm your subscription</p>
+    <a href="#"class="btn btn__subscription">Dismiss message</a>
+  
+</section>
+
+ <div class="overlay hidden ">
+
+</div> 
+
+
+  <!-- Sign-up form start
+
+  Stay updated!
+
+  
+  
+  
+  
+  Email address
+  email@company.com
+
+  Subscribe to monthly newsletter
+
+  <Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <!-- Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+
+  <!-- Success message end -->
+  
+  <script src="js/script.js"></script>
+</body>
+</html>
